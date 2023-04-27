@@ -1,0 +1,21 @@
+root@ds-kube-master:~/metrics# kubectl get pods -o=wide
+NAME                                                              READY   STATUS    RESTARTS      AGE     IP                NODE             NOMINATED NODE   READINESS GATES
+alertmanager-kube-prometheus-stack-1682-alertmanager-0            2/2     Running   1 (9h ago)    9h      192.168.252.80    ds-kube-node-0   <none>           <none>
+dummy-load-64c45556d6-9f5nh                                       1/1     Running   0             5m42s   192.168.252.104   ds-kube-node-0   <none>           <none>
+dummy-load-64c45556d6-dc5rl                                       1/1     Running   0             5m42s   192.168.252.103   ds-kube-node-0   <none>           <none>
+dummy-load-64c45556d6-j4tcq                                       1/1     Running   0             17m     192.168.252.100   ds-kube-node-0   <none>           <none>
+dummy-load-64c45556d6-mgzjz                                       1/1     Running   0             5m42s   192.168.121.7     ds-kube-node-1   <none>           <none>
+dummy-load-64c45556d6-qlnrt                                       1/1     Running   0             5m27s   192.168.252.105   ds-kube-node-0   <none>           <none>
+dummy-load-64c45556d6-rqnv2                                       0/1     Pending   0             5m27s   <none>            <none>           <none>           <none>
+dummy-load-64c45556d6-s4cjz                                       1/1     Running   0             17m     192.168.121.6     ds-kube-node-1   <none>           <none>
+dummy-load-64c45556d6-tm9g6                                       1/1     Running   0             37m     192.168.252.98    ds-kube-node-0   <none>           <none>
+dummy-load-64c45556d6-wf76f                                       1/1     Running   0             32m     192.168.121.4     ds-kube-node-1   <none>           <none>
+kube-prometheus-stack-1682-operator-5f4858bc-sk7zr                1/1     Running   0             9h      192.168.252.78    ds-kube-node-0   <none>           <none>
+kube-prometheus-stack-1682586970-grafana-8d47d7455-2xtm7          3/3     Running   0             9h      192.168.252.77    ds-kube-node-0   <none>           <none>
+kube-prometheus-stack-1682586970-kube-state-metrics-6d4764g574d   1/1     Running   1 (78m ago)   9h      192.168.252.76    ds-kube-node-0   <none>           <none>
+kube-prometheus-stack-1682586970-prometheus-node-exporter-bzwxm   1/1     Running   0             9h      138.68.74.145     ds-kube-master   <none>           <none>
+kube-prometheus-stack-1682586970-prometheus-node-exporter-pxkln   1/1     Running   2 (78m ago)   9h      10.19.0.6         ds-kube-node-0   <none>           <none>
+kube-prometheus-stack-1682586970-prometheus-node-exporter-vqr4j   1/1     Running   0             66m     10.19.0.7         ds-kube-node-1   <none>           <none>
+nginx-app-5c64488cdf-rbcjj                                        1/1     Running   0             23h     192.168.252.66    ds-kube-node-0   <none>           <none>
+nginx-app-5c64488cdf-xj8qd                                        1/1     Running   0             23h     192.168.252.65    ds-kube-node-0   <none>           <none>
+prometheus-kube-prometheus-stack-1682-prometheus-0                2/2     Running   0             78m     192.168.252.97    ds-kube-node-0   <none>           <none>
